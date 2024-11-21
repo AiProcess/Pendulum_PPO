@@ -41,7 +41,10 @@ class EnvSetup:
         )
         env = TransformedEnv(
             env=base_env,
-            transform=video_recorder
+            transform=Compose(
+                DoubleToFloat(),
+                video_recorder
+            )
         )
         return env
     
