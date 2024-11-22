@@ -17,7 +17,7 @@ max_grad_norm = 1.0
 frame_skips = 0
 frames_per_batch = 1000
 # For a complete training, bring the number of frames up to 1M
-total_frames = 10_000
+total_frames = 1000_000
 
 sub_batch_size = 64  # cardinality of the sub-samples gathered from the current data in the inner loop
 num_epochs = 10  # optimization steps per batch of data collected
